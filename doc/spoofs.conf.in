@@ -1,0 +1,70 @@
+################ ADMIN SPOOF ################
+#############################################
+auth {
+        user = "*admin@45.77.123.45";
+	password = "$1$SO9zcvsv$U0MoMKVzkRefMdD0Z2lBT.";        
+	spoof = "admin.server.net";
+        flags = encrypted, no_tilde, spoof_notice, exceed_limit, kline_exempt, dnsbl_exempt, spambot_exempt, jupe_exempt, resv_exempt, flood_exempt;
+        class = "admins";
+};
+############## END ADMIN SPOOF ##############
+#-------------------------------------------#
+
+
+
+############### GlobalOP SPOOF ############## 
+#############################################
+auth {
+        user = "*GlobalOP@45.77.123.45";
+	password = "$1$SO9zcvsv$U0MoMKVzkRefMdD0Z2lBT.";
+        spoof = "globalop.server.net";
+        flags = encrypted, no_tilde, spoof_notice, exceed_limit, kline_exempt, dnsbl_exempt, spambot_exempt, flood_exempt;
+        class = "opers";
+};
+########### END GlobalOP SPOOF #############
+#------------------------------------------#
+
+
+############# LocalOP SPOOF ################
+############################################
+auth {
+        user = "*LocalOP@45.77.123.45";
+	password = "$1$SO9zcvsv$U0MoMKVzkRefMdD0Z2lBT.";
+        spoof = "local.server.net";
+        flags = encrypted, no_tilde, spoof_notice, exceed_limit, dnsbl_exempt, spambot_exempt, flood_exempt;
+        class = "opers";
+};
+########## END LocalOp SPOOF ##############
+#-----------------------------------------#
+
+
+################ BOPM SPOOF ###############
+#-----------------------------------------#
+auth {
+
+	user = "*bopm@*";
+	password = "$1$SO9zcvsv$U0MoMKVzkRefMdD0Z2lBT.";
+	spoof = "proxy-monitor.server.net";
+	flags = encrypted, no_tilde, spoof_notice, exceed_limit, dnsbl_exempt, kline_exempt, spambot_exempt, jupe_exempt, flood_exempt, resv_exempt;
+	class = "opers";
+
+};
+############ END BOPM SPOOF ################
+#-----------------------------------------#
+
+
+
+############### USER SPOOF ################
+#-----------------------------------------#
+auth {
+
+	user = "*user@*";
+	password = "$1$SO9zcvsv$U0MoMKVzkRefMdD0Z2lBT.";
+	spoof = "user.server.net";
+	flags = encrypted, no_tilde, spoof_notice, dnsbl_exempt;
+	class = "users";
+
+};
+############ END USER SPOOF ###############
+#-----------------------------------------#
+

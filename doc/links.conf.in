@@ -1,0 +1,38 @@
+# links.conf
+
+connect "irc.freebg.net" {
+
+        host = "5.157.80.147";
+        send_password = "linkme";
+        accept_password = "linkme";
+        port = 9999;
+        hub_mask = "*";
+        class = "server";
+        flags = autoconn, ssl, topicburst, compressed;
+
+};
+
+
+connect "irc.techno-link.net" {
+
+	host = "193.107.37.102";
+	send_password = "linkme";
+	accept_password = "linkme";
+	port = 9999;
+	hub_mask = "*";
+	class = "server";
+	flags = ssl, topicburst, compressed;
+
+};
+
+connect "irc.xpdnet.org" {
+
+	host = "5.157.80.134";
+	send_password = "linkme";
+	accept_password = "linkme";
+	port = 9999;
+	hub_mask = "*";
+	class = "server";
+	flags = ssl, topicburst, compressed;
+
+};

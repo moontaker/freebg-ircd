@@ -1,0 +1,88 @@
+# opers.conf
+
+operator "bopm" {
+        user = "*bopm@proxy-monitor";
+        password = "$6$ot0X655GFf/rkpX5$tWEwoV5hWQuxA1Lcz7fdtTV66fL6pg2CQXVrR.UhSlvWnXzziwAJVlOYLQKNMaPJW5FwosE7CvzMM.R9DIlaK/";
+        snomask = "+scCnr";
+        flags = encrypted;
+        privset = "bot";
+};
+
+####################################################
+operator "-<( Server Bots )>-" {
+user="*@*";
+password="pass";
+};
+#####################################################
+#############      Server Bots            ###########
+#####################################################
+
+operator "BackupAdmin" {
+        user = "*@127.0.0.1";
+        user = "*BackUP@irc.server.net";
+        password = "$1$IiYIxE/h$T0yv50.TikEkvJ12HJkX2/";
+        snomask = "+sWZbxycdfknru";
+        flags = encrypted;
+        privset = "admin";
+};
+
+#####################################################
+operator "-<( BackUP Lines )>-" {
+user="*@*";
+password="pass";
+};
+#####################################################
+#############       BackUP Lines          ###########
+#####################################################
+
+operator "LocalOp" {
+        user = "*local@irc.server.net";
+        password = "$6$K/agpSjSnzggU39C$X7DxXIFMGaKxdarP5RWOMGWT6p5jcA0QOgNjJCgETuAOGMCWkXjH6FMGlLfbhuQWNE8i4jwSVVeD5kGqrsecG1";
+        snomask = "+sbxC";
+        flags = encrypted;
+        privset = "local";
+};
+
+#####################################################
+operator "-<( Local Opers )>-" {
+user="*@*";
+password="pass";
+};
+#####################################################
+#############      Local Operators        ###########
+#####################################################
+
+operator "GlobalOp" {
+        user = "*global@irc.server.net";
+        password = "$6$M2eC7zli/crCaTn6$D9196rWjiulH.waHeZZ6Bsm5qge27FEkpKbByWCP9QmwOL78bvM/5m8D1crILJ/nrmguMXz.M06NBohSQoJip.";
+        snomask = "+sbxWZy";
+        flags = encrypted;
+        privset = "global";
+};
+
+####################################################
+operator "-<( Global Opers )>-" {
+user="*@*";
+password="pass";
+};
+#####################################################
+#############     Global Operators        ###########
+#####################################################
+
+operator "Admin" {
+	user = "*admin@*.server.net";
+	user = "*identd@irc.server.net";
+        password = "dS68qSNqEkU2.";
+        snomask = "+sWZbxycdfknru";
+        flags = encrypted;
+        privset = "admin";
+};
+
+#####################################################
+operator "-<( Server Owner )>-" {
+user="*@*";
+password="pass";
+};
+#####################################################
+#############     Server Administrator    ###########
+#####################################################
